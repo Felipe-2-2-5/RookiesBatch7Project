@@ -2,13 +2,13 @@ name: Build and deploy .NET Core application to Web App MySelfStudyApp
 on:
   push:
     branches:
-    - app2
+    - main
 env:
   AZURE_WEBAPP_NAME: MySelfStudyApp
   AZURE_WEBAPP_PACKAGE_PATH: ReactApp1.Server\published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 6.0.x
-  WORKING_DIRECTORY: ReactApp1.Server
+  WORKING_DIRECTORY: ./ReactApp1.Server
 jobs:
   build:
     runs-on: windows-latest
