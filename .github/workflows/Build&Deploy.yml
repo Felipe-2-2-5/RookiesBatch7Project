@@ -11,7 +11,7 @@ env:
   DOTNET_CORE_VERSION: 6.0.x
   WORKING_DIRECTORY: ./MySelfStudyApp
 jobs:
-    build:
+  build:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
